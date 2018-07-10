@@ -18,7 +18,7 @@ let sentences = [
     "They reached the peak of the mountain after 4 days. When they got there, they saw something very unexpected.",
     "He was about to open the old wooden box but his dad suddenly shouted \'No!\'",
     "Mark had ordered 4 books. When he opened the box, he saw 5 book instead.",
-    "Suddenyly, they decided to do something crazy. They bought one way tickets to somewhere exciting.",
+    "Suddenly, they decided to do something crazy. They bought one way tickets to somewhere exciting.",
     "It was a very important day for Jason who was a computer scientist.",
     "Lisa thought she was late for the school, however, there was no one at the school!",
     "The prisoners woke up to see that the guardians had left the prison and their doors were left opened.",
