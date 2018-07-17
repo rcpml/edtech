@@ -26,7 +26,7 @@ let sentences = [
     "There was full moon in the air and it was all silent in the forest.",
     "She could not believe that she has lost it!",
     "One of the books fell down the shelf while he was wandering in the library.",
-    "The sea was very calm but the ship suddenly started to shake",
+    "The sea was very calm but the ship suddenly started to shake.",
     "All of a sudden, the dogs in the park started to bark!",
     "It has been a tiring day for Richard.",
     "When she opened the window, there was snow everywhere!",
