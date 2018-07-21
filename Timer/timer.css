@@ -1,0 +1,35 @@
+/* body {
+    background: rgba(2, 42, 49, 0.747);   
+} */
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-open_sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.font-dosis {
+    font-family: 'Dosis', sans-serif;
+}
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.gradient {
+    background: #f1c40f;
+}
+
+.gradient:hover {
+    background: #2ecc71;
+}

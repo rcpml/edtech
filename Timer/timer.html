@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EDUTIMER</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="https://twemoji.maxcdn.com/2/72x72/1f335.png" type="image/png" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="timer.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Open+Sans|Dosis|Quicksand|Raleway" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="../index.html">RE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Tools
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../Emojify/emojify.html">Emoji stories</a>
+            <a class="dropdown-item" href="storystarter.html">Story starter</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about.html">About
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <span class="navbar-text"></span>
+
+      <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/recepemul/" target="_blank">
+        <span class="fa fa-linkedin"></span></a>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div class="container text-center">
+    <br>
+    <br>
+    <h1 class="font-roboto">TIMER</h1>
+    <p>
+      <button class="btn btn-lg btn-info bg-dark" style="width:250px" aria-label="START">
+        <span id="timerminutes"></span>:<span id="timerseconds"></span>
+      </button>
+    </p>
+    <p>
+      <button class="btn btn-lg btn-success" style="width:150px" aria-label="START" id="initiatetimer">START</button>
+      <button class="btn btn-lg btn-info " style="width:150px" aria-label="START" id="pausetimer">PAUSE</button>
+      <button class="btn btn-lg btn-warning " style="width:150px" aria-label="START" id="resettimer">RESET</button>
+    </p>
+    <br>
+    <br>
+    <div class="btn-group btn-group-justified">
+      <button class="btn btn-lg font-quicksand gradient" style="width:100px" id="minusfive">
+        <b>-1</b>
+      </button>
+      <button class="btn btn-lg font-quicksand gradient" style="width: 100px;" id="plusfive">
+        <b>+1</b>
+      </button>
+    </div>
+    <br>
+    <br>
+    <audio src="media/notificationaudio.mp3" id="notificationaudio"></audio>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="timer.js"></script>
+</body>
+
+</html>
