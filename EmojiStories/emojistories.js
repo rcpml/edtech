@@ -496,20 +496,15 @@ $(function () {
     var emojiStories = [
         ["&#x1F3D5; &#x1F46B; &#x1F432; &#x1F631;"],
         ["&#x1F934; &#x1F478; &#x1F6F6; &#x1F420; &#x1F42C; &#x1F3DD;"],
-        ["&#x23F0; &#x1F6CF; &#x1F6B6; &#x1F327; &#x1F302; &#x1F914; &#x1F3E1; &#x1F62E;"]
+        ["&#x23F0; &#x1F6CF; &#x1F6B6; &#x1F327; &#x1F302; &#x1F914; &#x1F3E1; &#x1F62E;"],
+        ["&#x1F332; &#x1F333; &#x1F42D; &#x1F422; &#x1F407; &#x23F3;"],
+        ["&#x1F320; &#x1F6CF; &#x1F647; &#x1F47D; &#x1F916; &#x1F632;"],
+        ["&#x1F329; &#x1F319; &#x1F46B; &#x1F3F0; &#x1F526; &#x1F47B; &#x1F578; &#x1F933;"],
+        ["&#x1F471; &#x1F31A; &#x1F52D; &#x2604; &#x1F632; &#x1F385; &#x1F607;"],
+        ["&#x1F43B; &#x1F43E; &#x1F440; &#x1F36F; &#x1F41D; &#x1F631;"]
     ];
 
 
-    //add random emoji with the each click/tap
-    function emojiRandomizer() {
-        let randomizer = Math.floor(Math.random() * emojiList.length);
-        let element = document.getElementById("emojibed");
-        document.getElementById('emojibed').innerHTML += emojiList[randomizer];
-        element.classList.add("fadeIn");
-        $('.fadeIn').hide().fadeIn(500);
-        twemoji.parse(document.body);
-    }
-    document.getElementById('emojiRandomizer').addEventListener('click', emojiRandomizer);
 
     
     //add random emoji story senctence with the each click/tap

@@ -4,10 +4,16 @@
 <head>
   <title>EDUTIMER</title>
   <meta charset="utf-8">
-  <link rel="icon" href="https://twemoji.maxcdn.com/2/72x72/1f335.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="1f335.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="timer.css">
+
+  <!-- Social network buttons -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link href="../css/bootstrap-social.css" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Open+Sans|Dosis|Quicksand|Raleway" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -34,8 +40,10 @@
             Tools
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../Emojify/emojify.html">Emoji stories</a>
-            <a class="dropdown-item" href="storystarter.html">Story starter</a>
+            <a class="dropdown-item" href="../EmojiStories/emojistories.html">Emoji stories</a>
+            <a class="dropdown-item" href="../RandomEmojis/randomemojis.html">Random Emojis</a>
+            <a class="dropdown-item" href="../StoryStarter/storystarter.html">Story starter</a>
+            <a class="dropdown-item" href="timer.html">Timer</a>
           </div>
         </li>
         <li class="nav-item">
@@ -51,10 +59,10 @@
       <span class="navbar-text"></span>
 
       <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/recepemul/" target="_blank">
-        <span class="fa fa-linkedin"></span></a>
+        <span class="fa fa-linkedin"></span>
+      </a>
     </div>
   </nav>
-  <br>
   <br>
   <br>
   <div class="container text-center">
@@ -63,7 +71,8 @@
     <h1 class="font-roboto">TIMER</h1>
     <p>
       <button class="btn btn-lg btn-info bg-dark" style="width:250px" aria-label="START">
-        <span id="timerminutes"></span>:<span id="timerseconds"></span>
+        <span id="timerminutes"></span>:
+        <span id="timerseconds"></span>
       </button>
     </p>
     <p>
