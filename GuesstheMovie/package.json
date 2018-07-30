@@ -1,0 +1,18 @@
+{
+  "name": "emoji",
+  "version": "1.0.0",
+  "description": "Emojify",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "emoji",
+    "random"
+  ],
+  "author": "Recep Emül",
+  "license": "ISC",
+  "dependencies": {
+    "emoji-regex": "^7.0.0"
+  }
+}
