@@ -2,7 +2,7 @@
 //jQuery Parts - start ready
 $(function () {
 
-    
+
     var emojiList = [
         '&#x1F601;',
         '&#x1F923;',
@@ -506,11 +506,22 @@ $(function () {
         ["&#x1F940; &#x1F64D; &#x1F4A7; &#x1F337; &#x1F481; &#x1F33A;"],
         ["&#x1F46B; &#x1F45F; &#x1F383; &#x1F303; &#x1F440; &#x1F984;"],
         ["&#x1F680; &#x1F319; &#x1F47D; &#x1F62E; &#x1F4A4; &#x1F6CF; &#x1F60A;"],
+        ["&#x1f6b6; &#x1f4bb; &#x1f50b; &#x1f62e; &#x1f914; &#x1f50c; &#x26a1; &#x1f44d;"],
+        ["&#x1F680; &#x1F319; &#x1F308; &#x1F47D; &#x1F590; &#x1F575;&#x1F3FB;"],
+        ["&#x1F3C3; &#x1F45F; &#x1F332; &#x26F0; &#x1F412; &#x1F44B; &#x1F60A;"],
+        ["&#x26C8; &#x1F30A; &#x1F3C4; &#x1F422; &#x1F3DD; &#x1F642;"],
+        ["&#x1F4A4; &#x1F634; &#x1F304; &#x1F615; &#x2615; &#x1F603;"],
+        ["&#x1F56F; &#x1F4D6; &#x1F989; &#x1F3B6; &#x1F327; &#x1F312; &#x1F467;"],
+        ["&#x1F4F2; &#x1F4E7; &#x1F62E; &#x1F409; &#x1F301; &#x1F6E9;"],
+        ["&#x1F412; &#x1F60A; &#x1F3B9; &#x1F3BC; &#x1F632; &#x1F604;"],
+        ["&#x1F6F0; &#128125; &#x1F399; &#x1F3B6; &#x1F30E; &#x231A;"],
+        ["&#x1F576; &#x1F60A; &#x1F31E; &#x1F349; &#x1F3D6;"],
+        ["&#x1F340; &#x1F4B0; &#x1F64C; &#x1F3DD; &#x1F491;"]
     ];
 
 
 
-    
+
     //add random emoji story senctence with the each click/tap
     function emojiStorifier() {
         let randomizer = Math.floor(Math.random() * emojiStories.length);
@@ -521,7 +532,5 @@ $(function () {
         twemoji.parse(document.body);
     }
     document.getElementById('emojiStorifier').addEventListener('click', emojiStorifier);
-
-
 
 }); // end ready
