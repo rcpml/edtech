@@ -30,6 +30,19 @@ let sentences = [
     "All of a sudden, the dogs in the park started to bark!",
     "It has been a tiring day for Richard.",
     "When she opened the window, there was snow everywhere!",
+    "Mary and Suzie found a rose in the forest. It was just black and white!",
+    "The moon was shining so brightly that people didn\'t need lights during their night walk.",
+    "Chris though he just bought a nice pen, however, it was much more than a pen.",
+    "All the clocks at the office had stopped!",
+    "It was snowing, but the snow was in blue color!",
+    "It was a usual morning until they saw the sky full of birds!",
+    "The Simpsons found a bag full of gold in the ceiling. However, there was also a note in the bag!",
+    "All the TV channels in the world were showing that event.",
+    "It didn't take very long for the group to realize that they were on an island!",
+    "The house looked empty, but a lot of noise was coming from it!",
+    "All the horses on the road suddenly started to walk backwards!",
+    "Willie woke up to see that his eye color had changed from brown to yellow!",
+    "There were 44 missed calls and 72 messages when he checked his phone!"
 ];
 
 //Select the div and place the random story starter sentence 
