@@ -1,11 +1,15 @@
 //Time display, +5 & -5 button 
 const timerMinutes = document.getElementById("timerminutes");
 const timerSeconds = document.getElementById("timerseconds");
+const minusOne = document.getElementById("minusone");
+const plusOne = document.getElementById("plusone");
 const minusFive = document.getElementById("minusfive");
 const plusFive = document.getElementById("plusfive");
 
+
+
 //Set default count value to 5 seconds
-let timerCoreStarter = 60;
+let timerCoreStarter = 300;
 var timerCoreValue = new Date(timerCoreStarter * 1000);
 var minutes = Math.floor((timerCoreValue % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((timerCoreValue % (1000 * 60)) / 1000);
@@ -37,8 +41,10 @@ function timeCalcPost() {
     timerSeconds.textContent = seconds;
   }
 }
-//-5 minutes with each click
-minusFive.addEventListener('click', function () {
+
+
+//-1 minute with each click
+minusOne.addEventListener('click', function () {
   if (timerCoreStarter > 120) {
     timerCoreStarter -= 60;
     timeCalcPost();
@@ -48,11 +54,30 @@ minusFive.addEventListener('click', function () {
   }
 });
 
-//+5 minutes with each click
-plusFive.addEventListener('click', function () {
+//+1 minute with each click
+plusOne.addEventListener('click', function () {
   timerCoreStarter += 60;
   timeCalcPost();
 });
+
+
+//-5 minutes with each click
+minusFive.addEventListener('click', function () {
+  if (timerCoreStarter > 300) {
+    timerCoreStarter -= 300;
+    timeCalcPost();
+  } else {
+    timerCoreStarter = 300;
+    timeCalcPost();
+  }
+});
+
+//+5 minutes with each click
+plusFive.addEventListener('click', function () {
+  timerCoreStarter += 300;
+  timeCalcPost();
+});
+
 
 //Counter function and stop when it reaches zero.
 function counter() {
@@ -84,7 +109,7 @@ document.getElementById('pausetimer').addEventListener("click", pauseTimer);
 //Reset
 function resetTimer() {
   clearInterval(counterX);
-  timerCoreStarter = 60;
+  timerCoreStarter = 300;
   timeCalcPost();
 }
 document.getElementById('resettimer').addEventListener("click", resetTimer);
