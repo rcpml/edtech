@@ -11,18 +11,19 @@
   <link rel="icon" href="1f335.png">
 
 
-  <!-- Social network buttons -->
+  <!-- Social network buttons, fonts and icons -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
   <link href="../css/bootstrap-social.css" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Open+Sans|Dosis|Quicksand|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Open+Sans|Dosis|Quicksand|Raleway|Lato" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
   <!-- navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top clear">
     <a class="navbar-brand" href="../index.html">RE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +63,7 @@
       <span class="navbar-text"></span>
 
       <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/recepemul/" target="_blank">
-        <span class="fa fa-linkedin"></span>
+        <span class="fab fa-linkedin-in"></span>
       </a>
     </div>
   </nav>
@@ -71,35 +72,46 @@
   <div class="container text-center">
     <br>
     <br>
-    <h1 class="font-roboto">TIMER</h1>
+    <h1 class="font-lato" id="timerheading">TIMER</h1>
     <p>
-      <button class="btn btn-lg btn-info bg-dark" style="width:250px" aria-label="START">
-        <span id="timerminutes"></span>:<span id="timerseconds"></span>
+      <button class="btn btn-lg btn-info bg-dark" id="show" style="width:250px" aria-label="START">
+        <span id="timerhours"></span>:<span id="timerminutes"></span>:<span id="timerseconds"></span>
       </button>
     </p>
     <p>
-      <button class="btn btn-lg btn-success" style="width:150px" aria-label="START" id="initiatetimer">START</button>
-      <button class="btn btn-lg btn-info " style="width:150px" aria-label="START" id="pausetimer">PAUSE</button>
+      <button class="btn btn-lg btn-info bg-dark" id="start" style="margin-right: 5px;">
+        <span class="fas fa-play" aria-label="START"></span>
+      </button>
+      <button class="btn btn-lg btn-info bg-dark" id="pause">
+        <span class="fas fa-pause" aria-label="PAUSE"></span>
+      </button>
+
     </p>
     <p>
-      <button class="btn btn-lg btn-warning " style="width:150px" aria-label="START" id="resettimer">RESET</button>
+      <span class="d-none d-md-block">
+        <button class="btn btn-lg btn-default fas fa-vector-square" aria-label="FULL SCREEN" id="fullscreen"></button>
+      </span>
     </p>
+    <p>
+      <button class="btn btn-lg btn-info bg-dark clear" style="width:150px" aria-label="START" id="resettimer">RESET</button>
+    </p>
+
     <br>
     <div class="btn-group btn-group-justified">
-      <button class="btn btn-lg font-quicksand gradient" style="width:100px" id="minusone">
+      <button class="btn btn-lg font-quicksand gradient clear" style="width:100px" id="minusone">
         <b>-1</b>
       </button>
-      <button class="btn btn-lg font-quicksand gradient" style="width: 100px;" id="plusone">
+      <button class="btn btn-lg font-quicksand gradient clear" style="width: 100px;" id="plusone">
         <b>+1</b>
       </button>
     </div>
     <br>
     <br>
     <div class="btn-group btn-group btn-group-justified">
-      <button class="btn btn-lg font-quicksand gradient" style="width:100px" id="minusfive">
+      <button class="btn btn-lg font-quicksand gradient clear" style="width:100px" id="minusfive">
         <b>-5</b>
       </button>
-      <button class="btn btn-lg font-quicksand gradient" style="width: 100px;" id="plusfive">
+      <button class="btn btn-lg font-quicksand gradient clear" style="width: 100px;" id="plusfive">
         <b>+5</b>
       </button>
     </div>
