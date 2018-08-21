@@ -5,3 +5,8 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+
+.fa-linkedin-in {
+  background-color: rgb(255, 255, 255);
+  color: rgb(61, 60, 60);
+}
