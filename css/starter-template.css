@@ -18,6 +18,15 @@ body {
   background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
 }
 
+#jumbotron-index-2 {
+  padding: 0%;
+  border-radius: 10px;
+  background: #FFEFBA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
 .btn-grad {
   background-color: #7f5a83;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
