@@ -21,10 +21,18 @@ body {
 #jumbotron-index-2 {
   padding: 0%;
   border-radius: 10px;
-  background: #FFEFBA;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #FFEFBA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#jumbotron-index-3 {
+  padding: 0%;
+  background: rgb(36, 216, 192);  /* fallback for old browsers */
+  background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
 }
 
 .btn-grad {
@@ -34,15 +42,22 @@ body {
 }
 
 /* List item  in the tools page */
+
 .gradient-list-item {
-  background: #d9a7c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: none; 
+  background: #d9a7c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
 }
 
 .gradient-list-item:hover {
-  background: #4AC29A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #4AC29A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #BDFFF3, #4AC29A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
