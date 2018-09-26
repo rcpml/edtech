@@ -5,22 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Edu Timer</title>
-  
+  <title>Edtech Search Directory</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-  crossorigin="anonymous">  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Open+Sans|Dosis|Quicksand|Raleway|Lato" rel="stylesheet">
-  <link rel="stylesheet" href="timer.css">
-  <link rel="icon" href="1f335.png">
+  <link rel="stylesheet" href="./css/edtechsearch.css">
+  <script type="text/javascript" src="./js/vue.js"></script>
+  <link rel="icon" href="./images/1f5dd.png">
 </head>
 
 <body>
-  <!-- navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top clear">
+  <!-- navigation start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="../index.html">RE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -35,17 +37,17 @@
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             Tools
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../EdtechSearch/edtechsearch.html">Edtech Search Core</a>
+            <a class="dropdown-item" href="edtechsearch.html">Edtech Search Core</a>
             <a class="dropdown-item" href="../EmojiStories/emojistories.html">Emoji Stories</a>
             <a class="dropdown-item" href="../RandomEmojis/randomemojis.html">Random Emojis</a>
             <a class="dropdown-item" href="../StoryStarter/storystarter.html">Story Starter</a>
             <a class="dropdown-item" href="../GuesstheMovie/guessthemovie.html">Guess the Movie</a>
-            <a class="dropdown-item" href="timer.html">Timer</a>
+            <a class="dropdown-item" href="../Timer/timer.html">Timer</a>
           </div>
         </li>
         <li class="nav-item">
@@ -67,55 +69,43 @@
   </nav>
   <br>
   <br>
-  <div class="container text-center">
-    <br>
-    <br>
-    <h1 class="font-lato" id="timerheading">TIMER</h1>
-    <p>
-      <button class="btn btn-lg btn-info bg-dark" id="show" style="width:250px" aria-label="START">
-        <span id="timerhours"></span>:<span id="timerminutes"></span>:<span id="timerseconds"></span>
-      </button>
-    </p>
-    <p>
-      <button class="btn btn-lg btn-info bg-dark" id="start" style="margin-right: 5px;">
-        <span class="fas fa-play" aria-label="START"></span>
-      </button>
-      <button class="btn btn-lg btn-info bg-dark" id="pause">
-        <span class="fas fa-pause" aria-label="PAUSE"></span>
-      </button>
+  <!-- navigation end -->
 
-    </p>
-    <p>
-      <span class="d-none d-md-block">
-        <button class="btn btn-lg btn-default fas fa-vector-square" aria-label="FULL SCREEN" id="fullscreen"></button>
-      </span>
-    </p>
-    <p>
-      <button class="btn btn-lg btn-info bg-dark clear" style="width:150px" aria-label="START" id="resettimer">RESET</button>
-    </p>
+  <div class="jumbotron jumbotron-fluid bg-light text-center jumbotrongradient">
+    <div class="container-fluid" id="item-container">
+      <h1 class="display-5 font-raleway">EDTECH SEARCH</h1>
+      <p class="lead font-montserrat" id="searchbartext">Type the activity type, topic or keyword you want.</p>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 ">
+          <div class="input-group mb-3" id="searchbar">
+            <input type="text" v-model="search" class="form-control focus" placeholder="ex: quiz, collaborate, multimedia, game, etc." autofocus>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-light" id="resultsmain">
+        <div class="row text-center justify-content-center font-raleway" id="classification">
+          <div class="col-md-4 tool-name">TOOL NAME</div>
+          <!-- The purpose part has been excluded to save space -->
+          <!-- <div class="col-md-3 tool-purpose">PURPOSE</div> -->
+          <div class="col-md-4 tool-keywords">KEYWORDS</div>
+          <div class="col-md-4 tool-website">WEBSITE</div>
+        </div>
 
-    <br>
-    <div class="btn-group btn-group-justified">
-      <button class="btn btn-lg font-quicksand gradient clear" style="width:100px" id="minusone">
-        <b>-1</b>
-      </button>
-      <button class="btn btn-lg font-quicksand gradient clear" style="width: 100px;" id="plusone">
-        <b>+1</b>
-      </button>
+        <div class="row font-raleway text" id="item-container">
+          <template v-for="tool in filteredTools">
+            <div class="col-md-4 tool-name-item">{{ tool.name }}</div>
+            <!-- The purpose part has been excluded to save space -->
+            <!-- <div class="col-md-3 tool-purpose-item">{{ tool.purpose }}</div> -->
+            <div class="col-md-4 tool-keywords-item">{{ tool.keywords }}</div>
+            <div class="col-md-4 tool-website-item">
+              <a :href="tool.website" target="_blank" rel="noopener">{{ tool.website }}</a>
+            </div>
+          </template>
+        </div>
+      </div>
     </div>
-    <br>
-    <br>
-    <div class="btn-group btn-group btn-group-justified">
-      <button class="btn btn-lg font-quicksand gradient clear" style="width:100px" id="minusfive">
-        <b>-5</b>
-      </button>
-      <button class="btn btn-lg font-quicksand gradient clear" style="width: 100px;" id="plusfive">
-        <b>+5</b>
-      </button>
-    </div>
-    <br>
-    <audio src="media/notificationaudio.mp3" id="notificationaudio"></audio>
   </div>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -123,7 +113,5 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="timer.js"></script>
+  <script type="text/javascript" src="./js/edtechsearch.js"></script>
 </body>
-
-</html>

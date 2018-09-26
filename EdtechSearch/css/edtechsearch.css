@@ -1,0 +1,82 @@
+/* FONTS */
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-open_sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.font-dosis {
+    font-family: 'Dosis', sans-serif;
+}
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+/* PAGE COMPONENTS */
+
+.fa-linkedin-in {
+    background-color: rgb(255, 255, 255);
+    color: rgb(61, 60, 60);
+}
+
+
+.jumbotron-fluid {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.jumbotrongradient {
+    /* background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%); */
+    /* border-bottom: 2px solid rgb(8, 100, 143); */
+    margin-bottom: 1%;
+}
+
+#searchbartext {
+    font-size: 14pt;
+}
+
+#searchbar {
+    height: 35px;
+}
+
+
+#classification {
+    color: rgb(163, 17, 61);
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+
+}
+
+
+.tool-name-item,
+.tool-purpose-item,
+.tool-keywords-item,
+.tool-website-item {
+    color: tomato;
+    font-size: 14pt;
+}
+
+.tool-name-item:hover,
+.tool-purpose-item:hover,
+.tool-keywords-item:hover,
+.tool-website-item:hover {
+    background-color: aquamarine;
+}
