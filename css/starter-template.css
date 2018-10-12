@@ -15,7 +15,7 @@ body {
 #jumbotron-index {
   padding: 0%;
   border-radius: 10px;
-  background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+  background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
 }
 
 #jumbotron-index-2 {
@@ -31,8 +31,9 @@ body {
 
 #jumbotron-index-3 {
   padding: 0%;
-  background: rgb(36, 216, 192);  /* fallback for old browsers */
-  background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
+  background: rgb(36, 216, 192);
+  /* fallback for old browsers */
+  background-image: linear-gradient(135deg, #90F7EC 10%, #32CCBC 100%);
 }
 
 .btn-grad {
@@ -44,12 +45,13 @@ body {
 /* List item  in the tools page */
 
 .gradient-list-item {
-  background: #d9a7c7;
+  background: #F7971E;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  background: linear-gradient(to right, #FFD200, #F7971E);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border: none;
 }
 
