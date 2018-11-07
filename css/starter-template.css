@@ -31,9 +31,10 @@ body {
 
 #jumbotron-index-3 {
   padding: 0%;
-  background: rgb(36, 216, 192);
-  /* fallback for old browsers */
-  background-image: linear-gradient(135deg, #90F7EC 10%, #32CCBC 100%);
+  background: #ffb347;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 .btn-grad {
@@ -45,21 +46,23 @@ body {
 /* List item  in the tools page */
 
 .gradient-list-item {
-  background: #F7971E;
+  background: #8e9eab;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFD200, #F7971E);
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   border: none;
 }
 
 .gradient-list-item:hover {
-  background: #4AC29A;
+  background: #abbaab;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);
+  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #BDFFF3, #4AC29A);
+  background: linear-gradient(to right, #ffffff, #abbaab);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
