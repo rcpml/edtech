@@ -516,6 +516,10 @@ $(function () {
     }
     document.getElementById('emojiRandomizer').addEventListener('click', emojiRandomizer);
 
+    //enable tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
 
 
 }); // end ready

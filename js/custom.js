@@ -5,3 +5,8 @@ $('.column .btnex').on('click', function(e) {
     $collapse.collapse('toggle');
 });
 
+//enable tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+

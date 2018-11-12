@@ -64,3 +64,8 @@ window.onkeyup = function(event) {
     storyStarter();
   }
 };
+
+//enable tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
