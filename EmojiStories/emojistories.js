@@ -533,9 +533,4 @@ $(function () {
     }
     document.getElementById('emojiStorifier').addEventListener('click', emojiStorifier);
 
-    //enable tooltips
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
-
 }); // end ready

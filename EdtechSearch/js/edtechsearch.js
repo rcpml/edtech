@@ -132,12 +132,8 @@ new Vue({
     }
 });
 
-//enable tooltips
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-});
 
 //focus for the searchbar as soon as the page loads since the autofocus does not work
-$(document).ready(function () {
-    $(".focus").focus();
-});
+$(document).ready(function() {
+    $( ".focus" ).focus();
+  });

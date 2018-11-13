@@ -11,14 +11,6 @@
     font-size: 62px;
 }
 
-#getquestion {
-    min-width: 205px;
-}
-
-.btn-lg {
-    border-radius: 100px 100px;
-}
-
 #snackbar {
     visibility: hidden;
     min-width: 250px;
