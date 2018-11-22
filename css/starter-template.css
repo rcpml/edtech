@@ -30,10 +30,13 @@ body {
 }
 
 #jumbotron-index-3 {
-  background: #AAFFA9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #AAFFA9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #11FFBD, #AAFFA9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .btn-grad {
@@ -64,4 +67,126 @@ body {
   background: linear-gradient(to right, #ffffff, #abbaab);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+#activepage {
+  color: rgb(255, 0, 106);
+  font-weight: 500;
+}
+
+.card-deck {
+  padding-bottom: 2%;
+}
+
+#edtech-tools-index {
+  background: #00C9FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #92FE9D, #00C9FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+
+#edtech-tools-index:hover {
+  background: #00C9FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00C9FF, #92FE9D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00C9FF, #92FE9D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+#emoji-stories {
+  background: #ffb347;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffcc33, #ffb347);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+#emoji-stories:hover {
+  background: #ffb347;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffb347, #ffcc33);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffb347, #ffcc33);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+#random-emojis {
+  background: #ADD100;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(154, 180, 25), #ADD100);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b7d422, #ADD100);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+#random-emojis:hover {
+  background: #ADD100;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ADD100, #c7e047);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ADD100, #c7e047);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+#story-starter {
+  background: #FBD3E9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9c4d8, #d88ab5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e9c4d8, #d88ab5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+#story-starter:hover {
+  background: #FBD3E9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9c4d8, #d88ab5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d88ab5, #e9c4d8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+#guess-the-movie {
+  background: #00d2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #739fdb, #00d2ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #739fdb, #00d2ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+#guess-the-movie:hover {
+  background: #00d2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #739fdb, #00d2ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00d2ff, #739fdb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+.tool-link {
+  color: gray;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.tool-link:hover {
+  background: transparent;
+  text-decoration: none;
 }
