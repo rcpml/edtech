@@ -45,7 +45,7 @@
 }
 
 .correct {
-    color: #0ec41d;  /* fallback for old browsers */
+    color: #0ec41d; 
     border-radius: 10px;
 }
 
@@ -58,15 +58,16 @@
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
     visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: #0ec41d; /* Green background color */
-    color: rgb(0, 0, 0); /* Black text color */
+    min-width: 150px; /* Set a default minimum width */
+    margin-left: -75px; /* Divide value of min-width by 2 */
+    background-color: #0fe421; /* Green background color */
+    color: rgb(255, 255, 255); /* Black text color */
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
     text-align: center; /* Centered text */
     border-radius: 5px; /* Rounded borders */
-    padding: 16px; /* Padding */
+    padding: 10px; /* Padding */
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */

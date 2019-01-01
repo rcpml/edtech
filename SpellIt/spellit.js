@@ -23,6 +23,9 @@ const wordsLevel1 = [
   'symmetric'
 ];
 
+//Check to see if there is a session already started
+let hasStarted = false;
+
 //The textbox for the word to be typed
 const wordHolder = document.getElementById('wordHolder');
 
