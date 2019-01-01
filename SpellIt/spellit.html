@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spell It!</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway:400,700|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="spellit.css">
+  <link rel="icon" href="1f340.png">
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="../index.html">RE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Tools
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../EdtechSearch/edtechsearch.html">Edtech Tools Index</a>
+            <a class="dropdown-item" href="../EmojiStories/emojistories.html">Emoji Stories</a>
+            <a class="dropdown-item" href="../RandomEmojis/randomemojis.html">Random Emojis</a>
+            <a class="dropdown-item" href="storystarter.html">Story Starter</a>
+            <a class="dropdown-item" href="../GuesstheMovie/guessthemovie.html">Guess the Movie</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about.html">About
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <span class="navbar-text"></span>
+
+      <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/recepemul/" target="_blank">
+        <span class="fab fa-linkedin-in"></span></a>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+
+  <!-- Page Content -->
+
+  <audio id="audio">
+    <source src="plucky.ogg" type="audio/ogg">
+    <source src="plucky.mp3" type="audio/mp3">
+    <source src="plucky.m4r" type="audio/m4r">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="my-4 font-raleway">SPELL IT!</h1>
+        <div class="card mb-4">
+          <div class="card-body" id="cardBody">
+            <h1 class="card-title font-raleway" id="wordHolder">Your new word will come here.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="card mb-4">
+          <div class="card-body">
+            <input class="form-control text-center font-lato" id="userInput" name="input" placeholder="Type it here!" onkeyup="checkInputWord()">
+          </div>
+          <button type="button" class="btn btn-info" onclick="getMyWord()" autofocus>
+            <strong>Click to get your word!</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="snackbar">+2 points!</div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="spellit.js"></script>
+  <script src="promise.js"></script>
+</body>
+
+</html>
