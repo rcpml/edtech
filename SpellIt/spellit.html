@@ -3,18 +3,18 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Spell It!</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway:400,700|Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="spellit.css">
-  <link rel="icon" href="1f340.png">
+    crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway:400,700|Roboto" rel="stylesheet" />
+  <link rel="stylesheet" href="spellit.css" />
+  <link rel="icon" href="1f340.png" />
 </head>
 
 <body>
@@ -29,8 +29,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../index.html">Home
-            <span class="sr-only">(current)</span>
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item dropdown">
@@ -47,8 +46,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../about.html">About
-            <span class="sr-only"></span>
+          <a class="nav-link" href="../about.html">About <span class="sr-only"></span>
           </a>
         </li>
         <li class="nav-item">
@@ -62,27 +60,31 @@
         <span class="fab fa-linkedin-in"></span></a>
     </div>
   </nav>
-  <br>
-  <br>
-  <br>
+  <br />
+  <br />
+  <br />
 
   <!-- Page Content -->
 
   <audio id="audio">
-    <source src="plucky.ogg" type="audio/ogg">
-    <source src="plucky.mp3" type="audio/mp3">
-    <source src="plucky.m4r" type="audio/m4r">
+    <source src="plucky.ogg" type="audio/ogg" />
+    <source src="plucky.mp3" type="audio/mp3" />
+    <source src="plucky.m4r" type="audio/m4r" />
     Your browser does not support the audio element.
   </audio>
 
-
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
-        <h1 class="my-4 font-raleway">SPELL IT!</h1>
+      <div class="col-md-12 ">
+        <div>
+          <p class="text-right" id="score">0 pt</p>
+        </div>
+        <h1 id="spellittitle" class="my-4 font-raleway text-center">SPELL IT!</h1>
         <div class="card mb-4">
           <div class="card-body" id="cardBody">
-            <h1 class="card-title font-raleway" id="wordHolder">Your new word will come here.</h1>
+            <h1 class="card-title font-raleway text-center" id="wordHolder">
+              Your new word will come here.
+            </h1>
           </div>
         </div>
       </div>
@@ -94,7 +96,8 @@
       <div class="col-md-12 text-center">
         <div class="card mb-4">
           <div class="card-body">
-            <input class="form-control text-center font-lato" id="userInput" name="input" placeholder="Type it here!" autocorrect="off" autocapitalize="none" autocomplete="off" onkeyup="checkInputWord()">
+            <input class="form-control text-center font-lato" id="userInput" name="input" placeholder="Type it here!"
+              autocorrect="off" autocapitalize="none" autocomplete="off" onkeyup="checkInputWord()" />
           </div>
           <button type="button" class="btn btn-info" onclick="getMyWord()" autofocus>
             <strong>Click to get your word!</strong>
@@ -105,12 +108,6 @@
   </div>
 
   <div id="snackbar">+2 points 😊</div>
-
-
-
-
-
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>

@@ -26,6 +26,10 @@ const wordsLevel1 = [
 //Check to see if there is a session already started
 let hasStarted = false;
 
+//Set userscore as 0 in the beginning and select "score" id from the HTML
+let userScore = 0;
+let score = document.getElementById('score');
+
 //The textbox for the word to be typed
 const wordHolder = document.getElementById('wordHolder');
 
@@ -84,6 +88,8 @@ function notifyCorrect() {
 function nextWord() {
   setTimeout(function() {
     if(userInput.value == wordHolder.textContent) {
+      userScore += 2;
+      score.textContent = userScore + " pts";
       getMyWord();
     } 
   }, 1000);
