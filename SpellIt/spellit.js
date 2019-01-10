@@ -5,21 +5,25 @@ const wordsLevel1 = [
   'excitement',
   'investigation',
   'implicit',
-  'thorough',
   'weird',
-  'accommodate',
-  'maintenance',
-  'conscience',
-  'occurred',
-  'acceptable',
   'brief',
   'caffeine',
   'monarchy',
   'replenish',
   'rhetoric',
   'sandwich',
-  'scenario',
+
+];
+
+const wordsLevel2 = [
+  'accommodate',
+  'maintenance',
+  'conscience',
   'silhouette',
+  'thorough',
+  'occurred',
+  'acceptable',
+  'scenario',
   'symmetric'
 ];
 
@@ -27,8 +31,8 @@ const wordsLevel1 = [
 let hasStarted = false;
 
 //Set userscore as 0 in the beginning and select "score" id from the HTML
-let userScore = 0;
-let score = document.getElementById('score');
+// let userScore = 0;
+// let score = document.getElementById('score');
 
 //The textbox for the word to be typed
 const wordHolder = document.getElementById('wordHolder');
@@ -78,30 +82,22 @@ function checkUserInput() {
 
 }
 
-//Display correct notification
-function notifyCorrect() {
-
-}
 
 //Automatically move to the next word in 0.5 second once user writes the target word correctly
 //Used as callback
 function nextWord() {
   setTimeout(function() {
     if(userInput.value == wordHolder.textContent) {
-      userScore += 2;
-      score.textContent = userScore + " pts";
+      // userScore += 2;
+      // score.textContent = userScore + " pts";
       getMyWord();
     } 
   }, 1000);
 }
 
-// Snackbar starts here
+// Snackbar
 function snackBar() {
-  // Get the snackbar DIV
   var x = document.getElementById("snackbar");
-  // Add the "show" class to DIV
   x.className = "show";
-  // After 3 seconds, remove the show class from DIV
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
 }
-// Snackbar ends here
