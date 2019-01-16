@@ -1,177 +1,185 @@
 .fa-linkedin-in {
-    background-color: rgb(255, 255, 255);
-    color: rgb(61, 60, 60);
+  background-color: rgb(255, 255, 255);
+  color: rgb(61, 60, 60);
 }
 
 .font-raleway {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .font-roboto {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .font-open-sans {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .font-lato {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .font-montserrat {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .bold {
-    font-weight: bold;
-}
-
-
-#wordHolder {
-    color: #EC6F66;
-}
-
-
-.btn-info {
-    background: #EC6F66;
-    /* fallback for old browsers */
-    border: none;
-    border-radius: 0px 0px 10px 10px;
-}
-
-
-#userResult {
-    font-size: 2.5rem;
-    height: 6rem;
-}
-
-#userInput {
-    font-size: 2.5rem;
-
+  font-weight: bold;
 }
 
 .correct {
-    color: #0eb11c;
+  color: #ec6f66;
 }
 
-/* .incorrect {
-    color: #e20303;
-    border-radius: 10px;
-} */
+.btn-info {
+  background: #ec6f66;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+}
 
+#userResult {
+  font-size: 2.5rem;
+  height: 6rem;
+}
+
+#userInput {
+  font-size: 2.5rem;
+}
+
+.card {
+  border-style: none;
+}
+
+#cardBody {
+  background-color: #02b8d8;
+  border-radius: 10px 10px 10px 10px;
+
+}
 
 #cardBody h1 {
-    font-size: 4rem;
+  font-size: 4rem;
+  background-color: #02b8d8;
+  
 }
 
+#interactionArea {
+    border: none;
+}
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
-    visibility: hidden;
-    /* Hidden by default. Visible on click */
-    min-width: 150px;
-    /* Set a default minimum width */
-    margin-left: -75px;
-    /* Divide value of min-width by 2 */
-    background-color: #EC6F66;
-    /* Green background color */
-    color: rgb(255, 255, 255);
-    /* Black text color */
-    font-weight: 500;
-    font-size: 1.1em;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    /* Centered text */
-    border-radius: 5px;
-    /* Rounded borders */
-    padding: 10px;
-    /* Padding */
-    position: fixed;
-    /* Sit on top of the screen */
-    z-index: 1;
-    /* Add a z-index if needed */
-    left: 50%;
-    /* Center the snackbar */
-    bottom: 30px;
-    /* 30px from the bottom */
+  visibility: hidden;
+  /* Hidden by default. Visible on click */
+  min-width: 150px;
+  /* Set a default minimum width */
+  margin-left: -75px;
+  /* Divide value of min-width by 2 */
+  background-color: #02b8d8;
+  /* Blue background color */
+  color: rgb(255, 255, 255);
+  /* White text color */
+  font-weight: 500;
+  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  /* Centered text */
+  border-radius: 5px;
+  /* Rounded borders */
+  padding: 10px;
+  /* Padding */
+  position: fixed;
+  /* Sit on top of the screen */
+  z-index: 1;
+  /* Add a z-index if needed */
+  left: 50%;
+  /* Center the snackbar */
+  bottom: 30px;
+  /* 30px from the bottom */
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
-    visibility: visible;
-    /* Show the snackbar */
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  visibility: visible;
+  /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
     However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 1s;
-    animation: fadein 0.5s, fadeout 0.5s 1s;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 1s;
+  animation: fadein 0.5s, fadeout 0.5s 1s;
 }
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-    from {
-        bottom: 0;
-        opacity: 0;
-    }
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
 
-    to {
-        bottom: 30px;
-        opacity: 1;
-    }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-    from {
-        bottom: 0;
-        opacity: 0;
-    }
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
 
-    to {
-        bottom: 30px;
-        opacity: 1;
-    }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeout {
-    from {
-        bottom: 30px;
-        opacity: 1;
-    }
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
 
-    to {
-        bottom: 0;
-        opacity: 0;
-    }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes fadeout {
-    from {
-        bottom: 30px;
-        opacity: 1;
-    }
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
 
-    to {
-        bottom: 0;
-        opacity: 0;
-    }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
-
-
-.temp {
-    color: aquamarine;
-}
-
-
 
 /* Media queries for small screens */
 @media screen and (max-width: 576px) {
+  #cardBody h1 {
+    font-size: 2rem;
+  }
 
-    #cardBody h1 {
-        font-size: 2rem;
-    }
+  #userInput {
+    font-size: 1.5rem;
+  }
+}
 
-    #userInput {
-        font-size: 1.5rem;
-
-    }
+.long-shadow {
+  padding: 25px;
+  border: 10px;
+  border-radius: 50px;
+  font: normal 60px/1 "Fredoka One", Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 3px 3px 0 #0199d9, 4px 4px 0 #0199d9, 5px 5px 0 #0199d9,
+    6px 6px 0 #0199d9, 7px 7px 0 #0199d9, 8px 8px 0 #0199d9, 9px 9px 0 #0199d9,
+    10px 10px 0 #0199d9, 11px 11px 0 #0199d9, 12px 12px 0 #0199d9,
+    13px 13px 0 #0199d9, 14px 14px 0 #0199d9, 15px 15px 0 #0199d9,
+    16px 16px 0 #0199d9, 17px 17px 0 #0199d9, 18px 18px 0 #0199d9,
+    19px 19px 0 #0199d9, 20px 20px 0 #0199d9;
 }

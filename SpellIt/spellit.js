@@ -1,9 +1,7 @@
 const wordsLevel1 = [
   'arbitrary',
-  'ambiguous',
   'crunchy',
   'excitement',
-  'investigation',
   'implicit',
   'weird',
   'brief',
@@ -12,27 +10,62 @@ const wordsLevel1 = [
   'replenish',
   'rhetoric',
   'sandwich',
-
-];
-
-const wordsLevel2 = [
   'accommodate',
   'maintenance',
   'conscience',
   'silhouette',
+  'ambiguous',
   'thorough',
   'occurred',
   'acceptable',
   'scenario',
-  'symmetric'
+  'symmetric',
+  'acquire',
+  'committed',
+  'exceed',
+  'guarantee',
+  'height',
+  'hierarchy',
+  'jewelry',
+  'judgment',
+  'maintenance',
+  'medieval',
+  'misspell',
+  'occasionally',
+  'perseverance',
+  'receipt',
+  'rhythm',
+  'schedule',
+  'access',
+  'component',
+  'permanent',
+  'query',
+  'strength',
+  'absence',
+  'accomplish',
+  'business',
+  'congratulations',
+  'development',
+  'especially',
+  'government',
+  'Arctic',
+  'mischief',
+  'coincidence',
+  'paramount',
+  'circumstance',
+  'construct',
+  'permanent',
+  'temporary',
+  'reassure',
+  'encourage',
+  'stimulate',
+  'endangered',
+  'renewable'
 ];
 
 //Check to see if there is a session already started
 let hasStarted = false;
 
-//Set userscore as 0 in the beginning and select "score" id from the HTML
-// let userScore = 0;
-// let score = document.getElementById('score');
 
 //The textbox for the word to be typed
 const wordHolder = document.getElementById('wordHolder');
@@ -71,16 +104,16 @@ function checkInputWord() {
     audio.play();
     snackBar();
     nextWord();
+    setTimeout(function () {
+      wordHolder.lettering();
+      animation();
+    }, 1000);
   } else {
     wordHolder.classList.remove("correct");
     wordHolder.classList.remove("bold");    
   }
 }
 
-//Check the accuracy of the input on each keypress and display it in the accuracy bar in percentages
-function checkUserInput() {
-
-}
 
 
 //Automatically move to the next word in 0.5 second once user writes the target word correctly
@@ -101,3 +134,21 @@ function snackBar() {
   x.className = "show";
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
 }
+
+
+// Animation starts
+// $(document).ready(function() {
+//   $("#wordHolder").lettering();
+// });
+  
+
+// $(document).ready(function() {
+//   animation();
+// }, 1000);
+
+
+// function animation() {
+//   var title1 = new TimelineMax();
+//   title1.staggerFromTo("#wordHolder span", 0.5, 
+//   {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+//   {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);  }
